@@ -1,0 +1,63 @@
+/* Hide Hiddify branding and footer elements */
+
+/* Hide Hiddify logo/branding at bottom left */
+*[class*="Hiddify"],
+*[class*="hiddify"] {
+    display: none !important;
+}
+
+/* Hide footer area with social media links */
+footer,
+footer *,
+.footer,
+.footer-links,
+.social-links,
+[class*="footer"] {
+    display: none !important;
+}
+
+/* Hide Hiddify copyright/attribution text */
+*:contains("Hiddify"),
+*:contains("YW0"),
+*:contains("github.com/hiddify"),
+*:contains("telegram") {
+    display: none !important;
+}
+
+/* Hide version number display */
+[class*="version"],
+[class*="Version"],
+span:contains("11.") {
+    display: none !important;
+}
+
+/* Hide help/support menu items */
+[class*="help"],
+[class*="support"],
+[class*="bug"],
+a[href*="help"],
+a[href*="support"],
+a[href*="bug"] {
+    display: none !important;
+}
+
+/* Hide social media icons */
+[class*="social"],
+[class*="icon"],
+a[href*="github"],
+a[href*="telegram"],
+a[href*="youtube"],
+a[href*="twitter"],
+a[href*="instagram"],
+.fab {
+    display: none !important;
+}
+
+/* Adjust layout if needed after hiding footer */
+body,
+main,
+.container,
+.main-content {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
